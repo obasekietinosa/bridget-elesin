@@ -17,9 +17,9 @@ export default function Navbar() {
       <li><Link onClick={ () => {setOpenDrawer(false)} } to="/categories/conversations">Conversations</Link></li>
       <li><Link onClick={ () => {setOpenDrawer(false)} } to="/categories/community">Community</Link></li>
       <li>
-        <a className="mr-3" href="https://facebook.com/wetalksound"><i className="fab fa-facebook"></i></a>&nbsp;
-        <a className="mr-3" href="https://twitter.com/wetalksound"><i className="fab fa-twitter"></i></a>&nbsp;
-        <a className="mr-3" href="https://instagram.com/wetalksound"><i className="fab fa-instagram"></i></a>
+        <a className="mr-3" href="https://facebook.com/bridgetelesin"><i className="fab fa-facebook"></i></a>&nbsp;
+        <a className="mr-3" href="https://twitter.com/bridgetelesin"><i className="fab fa-twitter"></i></a>&nbsp;
+        <a className="mr-3" href="https://instagram.com/bridgetelesin"><i className="fab fa-instagram"></i></a>
       </li>
     </ul>
   )
@@ -30,7 +30,7 @@ export default function Navbar() {
         <div className="container">
           <div className="Navleft"> 
             <Link className="logo" to="/">
-              <img src="https://services.etin.space/wts/wp-content/uploads/2020/06/logo.png" alt="WTS Blog" class="img-fluid" />
+              <img src="https://services.etin.space/demos/bridgetelesin/logo.png" alt="Bridget Elesin" class="img-fluid" />
             </Link>
           </div>
           <div className="Navright">

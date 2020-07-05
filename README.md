@@ -1,2 +1,2 @@
-# wknd-react-blog-starter
-React App Blog Boilerplate
+# Bridget Elesin's Website
+Bridget Elesin's Website created by wknd

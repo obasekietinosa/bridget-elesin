@@ -1,26 +1,26 @@
 import React, { Component } from 'react';
 import './Header.css';
-import SubscribeToNewsletter from 'Components/Entities/NewsletterSubscriptions/SubscribeToNewsletter';
-import SubscribeButtonWithOverlay from 'Components/Entities/NewsletterSubscriptions/Renders/SubscribeButtonWithOverlay';
+import Container from 'Components/Utilities/Layout/Containers/Container';
+import Column from 'Components/Utilities/Layout/Containers/Column';
+import Row from 'Components/Utilities/Layout/Containers/Row';
 export default class Header extends Component{
   render() {
     return (
-      <header className="Header d-flex">
-        <div className="container-fluid justify-content-center align-self-center">
-          <div className="row">
-            <div className="col-12 text-center">
-              <h2>Feel The Beat Of</h2>
-              <h1>Nigeria's Biggest Music Community.</h1>
-              <SubscribeToNewsletter 
-                renderAs={SubscribeButtonWithOverlay}
-                layout={{
-                  component: React.Fragment,
-                  props:{}
-                }}
-              />
-            </div>
-          </div>
-        </div>
+      <header className="Header text-center">
+        <Container>
+          <Row className="align-items-md-center">
+            <Column size={{md: "6"}}>
+                <img 
+                  src="https://services.etin.space/demos/bridgetelesin/WHTY.png" 
+                  className="img-fluid"
+                  alt=""
+                />
+            </Column>
+            <Column size={{md: "6"}}>
+                <h1>Live Your Best Life!</h1>
+            </Column>
+          </Row>
+        </Container>
       </header>
     );
   }

@@ -120,19 +120,19 @@ class App extends Component {
         }
       >
         <Helmet>
-          <title>WeTalkSound | Nigeria's Biggest Music Community</title>
-          <meta property="og:title" content="WeTalkSound | Nigeria's Biggest Music Community" />
+          <title>Live Your Best Life - Bridget Elesin</title>
+          <meta property="og:title" content="Live Your Best Life - Bridget Elesin" />
           <meta property="og:description"
-            content="Feel The Beat Of Nigeria's Biggest Music Community." />
-          <meta name="description" content="Feel The Beat Of Nigeria's Biggest Music Community." />
+            content="Bridget Elesin teaches individuals how to live their best life with transformational results. She is passionate about the family and ensuring men become better fathers while working with their wives as a team to build the family." />
+          <meta name="description" content="Bridget Elesin teaches individuals how to live their best life with transformational results. She is passionate about the family and ensuring men become better fathers while working with their wives as a team to build the family." />
           <meta property="og:image" content="https://blog-admin.wetalksound.co/extra/thumbnail.png" />
           <meta property="og:url" content="https://blog.wetalksound.co" />
-          <meta name="twitter:title" content="WeTalkSound | Nigeria's Biggest Music Community" />
+          <meta name="twitter:title" content="Live Your Best Life - Bridget Elesin" />
           <meta name="twitter:description"
-            content="Feel The Beat Of Nigeria's Biggest Music Community." />
+            content="Bridget Elesin teaches individuals how to live their best life with transformational results. She is passionate about the family and ensuring men become better fathers while working with their wives as a team to build the family." />
           <meta name="twitter:image" content="https://blog-admin.wetalksound.co/extra/thumbnail.png" />
-          <meta property="og:site_name" content="WeTalkSound | Nigeria's Biggest Music Community" />
-          <meta name="twitter:image:alt" content="WeTalkSound | Nigeria's Biggest Music Community" />
+          <meta property="og:site_name" content="Live Your Best Life - Bridget Elesin" />
+          <meta name="twitter:image:alt" content="Live Your Best Life - Bridget Elesin" />
         </Helmet>
         <div className="App">
           {console.log("Location", this.props.location)}

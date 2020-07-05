@@ -1,9 +1,8 @@
 :root{
 	/*--primary: #39d9e7;*/
 	/*--primary: #8c8c8c;*/
-	--primary: var(--yellow);
-	--accent: var(--yellow);
-	--accent-soft: var(--light-grey);
+	--primary: var(--red);
+	--accent: var(--light-grey);
 
 
 	--white: #fff;
@@ -11,10 +10,11 @@
 	--off-black: #191e23;
 	--black: #000;
 	--grey: #535353;
-	--light-grey: #cccccc;
+	--light-grey: #C0CAAD;
 	--pink: #ff9696;
+  --red: #E12D1A;
 	--light-pink: #f5efe0;
-  	--yellow: #e8cc83;
+  --yellow: #e8cc83;
 
 	--space: 15px;
 	--shadow: 2px 2px 5px;
@@ -30,7 +30,7 @@ body {
 	padding-top: 65px;
 	font-family: var(--body-font);
 	background-color: var(--off-black);
-	color: var(--off-white);
+	color: var(--black);
 	word-break: normal;
 	overflow-wrap: break-word;
 }
@@ -95,15 +95,17 @@ h1, h2{
 input[type="text"] , input[type="email"] {
   background: transparent;
   border-color: transparent;
-  color: var(--white);
-  border-bottom-color: var(--white);
+  color: var(--black);
+  border-bottom-color: var(--grey);
+  border-bottom-width: 3px;
+  border-radius: 0;
 }
 
 input[type="text"]:focus , input[type="email"]:focus {
   background: transparent;
   border-color: transparent;
   border-bottom-color: var(--primary);
-  color: var(--white);
+  color: var(--black);
   outline-color: transparent;
   box-shadow: none;
 }
@@ -154,8 +156,8 @@ input[type="text"]:focus , input[type="email"]:focus {
 }
 
 .Header, header, section{
-	margin-bottom: var(--space);
-  padding: calc(var(--space) / 2) 0;
+	/* margin-bottom: var(--space);
+  padding: calc(var(--space) / 2) 0; */
 }
 
 

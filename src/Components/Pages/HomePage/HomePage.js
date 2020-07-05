@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './Home.css'
 import Header from './Sections/Header/Header';
-import TopCategories from './Sections/TopCategories/TopCategories';
+import SubscribeCTA from './Sections/SubscribeCTA/SubscribeCTA';
 import MostRecentPosts from './Sections/MostRecentPosts/MostRecentPosts';
 
 export default class Home extends Component {
@@ -9,7 +9,7 @@ export default class Home extends Component {
     return (
       <div>
         <Header />
-        <TopCategories />
+        <SubscribeCTA />
         <MostRecentPosts />
       </div>
     )
