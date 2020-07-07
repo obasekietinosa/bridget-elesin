@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './Home.css'
 import Header from './Sections/Header/Header';
 import SubscribeCTA from './Sections/SubscribeCTA/SubscribeCTA';
-import MostRecentPosts from './Sections/MostRecentPosts/MostRecentPosts';
+import AboutMe from './Sections/AboutMe/AboutMe';
 
 export default class Home extends Component {
   render() {
@@ -10,7 +10,7 @@ export default class Home extends Component {
       <div>
         <Header />
         <SubscribeCTA />
-        <MostRecentPosts />
+        <AboutMe />
       </div>
     )
   }

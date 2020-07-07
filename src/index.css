@@ -1,7 +1,8 @@
 :root{
 	/*--primary: #39d9e7;*/
 	/*--primary: #8c8c8c;*/
-	--primary: var(--red);
+	--primary: var(--black);
+  --secondary: var(--blue);
 	--accent: var(--light-grey);
 
 
@@ -15,6 +16,7 @@
   --red: #E12D1A;
 	--light-pink: #f5efe0;
   --yellow: #e8cc83;
+  --blue: #134074;
 
 	--space: 15px;
 	--shadow: 2px 2px 5px;
@@ -29,7 +31,7 @@ html, body{
 body {
 	padding-top: 65px;
 	font-family: var(--body-font);
-	background-color: var(--off-black);
+	background-color: var(--white);
 	color: var(--black);
 	word-break: normal;
 	overflow-wrap: break-word;
@@ -125,15 +127,13 @@ input[type="text"]:focus , input[type="email"]:focus {
 }
 
 .btn{
-	padding: var(--space);
 	text-transform: uppercase;
-	font-size: 13px;
-  font-weight: 500;
-  border-radius: 30px;
+	font-size: 10px;
+  font-weight: 800;
+  border-radius: 10px;
 	/*border: solid 1px #000;*/
 	text-decoration: none;
 	display: inline-block;
-	margin: var(--space) 0;
 	transition: .4s linear;
 }
 
@@ -145,7 +145,7 @@ input[type="text"]:focus , input[type="email"]:focus {
 .btn-primary {
 	background-color: var(--primary);
 	border: 0.5px solid var(--accent);
-	color: var(--black);
+	color: var(--white);
 /* 	box-shadow: 3px 3px 0px var(--accent); */
 }
 

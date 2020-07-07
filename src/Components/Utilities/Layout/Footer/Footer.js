@@ -11,13 +11,11 @@ export default function Footer() {
       <Container>
         <Row>
           <Column size={{sm: "3", md:"6"}}>
-            <h6>WeTalkSound</h6>
+            <h6>Bridget Elesin</h6>
             <p>
-              We are Nigeria's biggest music community. This blog represents our
-              contribution to documenting and sharing knowledge regarding our rich
-              musical heritage.
+              Bridget Elesin teaches individuals how to live their best life with transformational results.
             </p>
-            <a href="https://wetalksound.co/" className="btn btn-primary">Subscribe</a>
+            <Link className="btn btn-primary" to="/about">About</Link>
           </Column>
           <Column size={{sm: "3", md:"2"}}>
             <h6>Blog</h6>
@@ -56,7 +54,7 @@ export default function Footer() {
         <Row>
           <div className="col-12 text-center">
             <p>
-              &copy; 2020, WeTalkSound
+              &copy; 2020, Bridget Elesin
             </p>
           </div>
         </Row>

@@ -7,7 +7,8 @@
     position: fixed;
     top: 0;
     z-index: 997;
-    border-bottom: solid 1px var(--light-grey);
+    /* border-bottom: solid 1px var(--light-grey); */
+    box-shadow:  var(--grey) var(--shadow);
     width: 100%;
 }
 
@@ -21,7 +22,6 @@
 .Navbar .Navleft {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .Navbar .Navright {
@@ -75,12 +75,6 @@
 .Navbar .collapse-menu {
   position: absolute;
   top: 0;
-  left: 25px;
-}
-
-.Navbar .search-btn {
-  position: absolute;
-  top: 0;
   right: 25px;
 }
 
@@ -111,6 +105,10 @@
 
   .NavLinks ul > li {
     margin-right: 20px;
+  }
+
+  .Navbar .Navleft {
+    justify-content: center;
   }
 
   .Navbar .Navright {

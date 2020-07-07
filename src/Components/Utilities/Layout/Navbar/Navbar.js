@@ -11,11 +11,12 @@ export default function Navbar() {
   const NavLinks = () => (
     <ul>
       <li><Link onClick={ () => {setOpenDrawer(false)} } to="/">Home</Link></li>
-      <li><Link onClick={ () => {setOpenDrawer(false)} } to="/posts">All Posts</Link></li>
-      <li><Link onClick={ () => {setOpenDrawer(false)} } to="/categories/music">Music</Link></li>
-      <li><Link onClick={ () => {setOpenDrawer(false)} } to="/categories/insights">Insights</Link></li>
-      <li><Link onClick={ () => {setOpenDrawer(false)} } to="/categories/conversations">Conversations</Link></li>
-      <li><Link onClick={ () => {setOpenDrawer(false)} } to="/categories/community">Community</Link></li>
+      <li><Link onClick={ () => {setOpenDrawer(false)} } to="/about">About</Link></li>
+      <li><Link onClick={ () => {setOpenDrawer(false)} } to="/blog">Blog</Link></li>
+      <li><Link onClick={ () => {setOpenDrawer(false)} } to="/books">Books</Link></li>
+      <li><Link onClick={ () => {setOpenDrawer(false)} } to="/podcast">Podcast</Link></li>
+      <li><Link onClick={ () => {setOpenDrawer(false)} } to="/courses">Courses</Link></li>
+      <li><Link onClick={ () => {setOpenDrawer(false)} } to="/contact">Contact</Link></li>
       <li>
         <a className="mr-3" href="https://facebook.com/bridgetelesin"><i className="fab fa-facebook"></i></a>&nbsp;
         <a className="mr-3" href="https://twitter.com/bridgetelesin"><i className="fab fa-twitter"></i></a>&nbsp;
@@ -39,9 +40,6 @@ export default function Navbar() {
             </div>
             <div className="collapse-menu d-block d-sm-none">
               <i onClick={ () => { setOpenDrawer(true) } } className="fas fa-bars"></i>
-            </div>
-            <div className="search-btn d-block d-sm-none">
-              <i className="fas fa-search"></i>
             </div>
           </div>
           <div className="Drawer">
