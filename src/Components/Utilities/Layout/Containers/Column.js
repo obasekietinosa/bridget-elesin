@@ -7,7 +7,7 @@ export default function Column({ children, size, className, offset, ...props}) {
       clsNm += `col-${key}-${value} `
     }
   } else {
-    clsNm += `col-${size} `
+    clsNm = size ? `col-${size} ` : `col-12`
   }
 
   if (offset) {
@@ -16,7 +16,7 @@ export default function Column({ children, size, className, offset, ...props}) {
         clsNm += `offset-${key}-${value} `
       }
     } else {
-      clsNm += `offset-${offset}`
+      clsNm += offset ? `offset-${offset}` : ``
     }
   }
   clsNm = `${clsNm} ${className}`

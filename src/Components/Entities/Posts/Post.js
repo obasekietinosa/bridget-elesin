@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react'
 import BlogContext from 'Components/Contexts/BlogContext'
 import Loading from 'Components/Utilities/Loading/Loading'
 import Default from 'Components/Pages/DefaultPage/DefaultPage'
+import { strip_tags } from 'Helpers/Helpers'
 
 export default class Post extends Component {
   static contextType = BlogContext
@@ -11,7 +12,7 @@ export default class Post extends Component {
     let status = "POST_LOADING"
     let post = {}
 
-    if (this.context.currentPost?.slug === this.props.match.params.slug) {
+    if (this.context.currentPost?.id === this.props.match.params.slug) {
       post = this.context.currentPost
       status = "POST_LOADED"
     }
@@ -31,7 +32,20 @@ export default class Post extends Component {
         const Layout = this.props.layout.component
         content = (
           <Layout {...this.props.layout.props} >
-            <Post post={post} />
+            <Post post={{
+              title: post.title,
+              excerpt: `${strip_tags(post.content).substr(0, 150)}...`,
+              image: post['images'][0]['url'],
+              slug: post.id,
+              category: "",
+              date: post.published,
+              author: {
+                name: post.author.displayName,
+                slug: post.author.id,
+                image: post.author.image.url
+              },
+              content: post.content
+            }} />
           </Layout>
         )
         break;

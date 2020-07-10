@@ -16,7 +16,7 @@ export default class Header extends Component{
                   alt=""
                 />
             </Column>
-            <Column size={{md: "6"}}>
+            <Column className="text-center" size={{md: "6"}}>
                 <h1>Live Your Best Life!</h1>
                 <h4>
                   •iConnect •iEncourage •iCoach •iMentor

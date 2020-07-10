@@ -94,6 +94,15 @@ h1, h2{
   font-weight: 700;
 }
 
+h1::after, h2::after, h3::after {
+  content: "";
+  display: block;
+  border-bottom: solid 1.5px var(--red);
+  width: 100%;
+  margin: 0 auto;
+  height: 5px;
+}
+
 input[type="text"] , input[type="email"] {
   background: transparent;
   border-color: transparent;

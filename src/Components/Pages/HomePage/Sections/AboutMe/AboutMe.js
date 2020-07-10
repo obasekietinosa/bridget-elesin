@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 export default function AboutMe() {
   return (
-    <Section bg="white" className="AboutMe">
+    <Section bg="light-grey" style={{padding:"50px 0"}} className="AboutMe">
       <Container>
         <Row className="align-items-md-center">
         <Column className="order-md-12" size={{md: "6"}}>
@@ -18,8 +18,8 @@ export default function AboutMe() {
           />
         </Column>
         <Column size={{md: "6"}}>
-          <h6>Meet</h6>
-          <h4>BRIDGET ELESIN</h4>
+          <h5>Meet</h5>
+          <h3>BRIDGET ELESIN</h3>
           <p>
             Bridget Elesin teaches individuals how to live their best life with transformational results. 
             She is passionate about the family and ensuring men become better fathers while working with 

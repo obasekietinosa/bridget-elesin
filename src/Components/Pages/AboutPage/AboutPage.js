@@ -15,7 +15,7 @@ export default function AboutPage() {
             src="https://services.etin.space/demos/bridgetelesin/intro.png" 
             className="img-fluid" 
           />
-          <h1>About Me</h1>
+          <h1 className="text-center">About Me</h1>
           <p>
             Bridget Elesin teaches individuals how to live their best life with transformational results. 
             She is passionate about the family and ensuring men become better fathers 
