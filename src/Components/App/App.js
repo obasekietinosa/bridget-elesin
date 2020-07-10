@@ -66,8 +66,8 @@ class App extends Component {
       })
   }
 
-  getPosts = () => {
-    this.blogService.getPosts()
+  getPosts = (limit=100) => {
+    this.blogService.getPosts(limit)
       .then(data => {
         let posts = data
         let postsLoaded = true

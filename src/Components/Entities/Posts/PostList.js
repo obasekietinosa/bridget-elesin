@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-// import Loading from 'Components/Utilities/Loading/Loading';
-import BlogContext from 'Components/Contexts/BlogContext';
+// import Loading from 'Components/Utilities/Loading/Loading'
+import BlogContext from 'Components/Contexts/BlogContext'
+import { strip_tags } from 'Helpers/Helpers'
 
 export default class PostList extends Component {
 
@@ -23,13 +24,13 @@ export default class PostList extends Component {
               <Post 
                 key={key}
                 post={{
-                  title: post.title.rendered,
-                  datePublished: post.date,
-                  image: post['_embedded']['wp:featuredmedia'][0]?.source_url,
-                  category: post['_embedded']['wp:term'][0][0].name,
-                  excerpt: post.excerpt.rendered,
-                  author: post._embedded.author[0].name,
-                  link: "/posts/" + post.slug
+                  title: post.title,
+                  datePublished: post.published,
+                  image: post['images'][0]['url'],
+                  category: "",
+                  excerpt: strip_tags(post.content).substr(0, 150),
+                  author: post.author.displayName,
+                  link: "/posts/" + post.id
                 }}
              />
             )

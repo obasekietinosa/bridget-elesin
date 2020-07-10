@@ -6,3 +6,8 @@ export function htmlDecode(input) {
   // return textArea.value
   return he.decode(input)
 }
+
+export function strip_tags(str) {
+    str = str.toString();
+    return str.replace(/<\/?[^>]+>/gi, '');
+}
