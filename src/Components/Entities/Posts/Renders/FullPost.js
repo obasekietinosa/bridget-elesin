@@ -25,10 +25,7 @@ export default function FullPost({ post }) {
       <header>
         <div className="container">
           <div className="row align-items-md-center">
-            <div className="col-12 col-md-6 mb-3">
-              <img class="img-fluid" alt={post.title} src={post.image} />
-            </div>
-            <div className="col-12 col-md-6 mb-3">
+            <div className="col-12 mb-3">
               <span className="category"><small>{post.category}</small></span>
               <h1
                 dangerouslySetInnerHTML={{ __html: post.title }}
@@ -55,7 +52,7 @@ export default function FullPost({ post }) {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="wp-content">
+            <div className="blog-content">
               <SyntaxHighlight content={post.content} />
             </div>
           </div>
@@ -63,7 +60,7 @@ export default function FullPost({ post }) {
         <div className="row">
           <div className="col-12">
             <h5>Share this article:</h5>
-            <SocialShare text={"Read " + htmlDecode(post.title) + " on WeTalkSound"} url={`https://blog.wetalksound.co/posts/${post.slug}`} tag={"WTS"} />
+            <SocialShare text={"Read " + htmlDecode(post.title) + " on BridgetElesin.com"} url={`https://bridgetelesin.com/posts/${post.slug}`} tag={"BridgetElesinTalks"} />
           </div>
         </div>
       </div>

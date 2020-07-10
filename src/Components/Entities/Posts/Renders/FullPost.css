@@ -1,14 +1,18 @@
-.wp-content img {
+.blog-content img {
   height: auto;
   width: 100%;
   border-radius: 10px;
   margin-bottom: 5px;
 }
 
-.wp-content figure {
+.blog-content figure {
   text-align: center;
   font-size: 80%;
   border-bottom: solid 1px;
+}
+
+.blog-content a {
+  margin: 0 !important;
 }
 
 .FullPost p {

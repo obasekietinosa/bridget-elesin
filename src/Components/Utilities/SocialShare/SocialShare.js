@@ -10,7 +10,7 @@ export default function SocialShare(props) {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <i className="fab fa-facebook"></i> Facebook
+                <i className="fab fa-facebook"></i>
             </a>
             &nbsp;
             <a
@@ -20,7 +20,7 @@ export default function SocialShare(props) {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <i className="fab fa-twitter"></i> Twitter
+                <i className="fab fa-twitter"></i>
             </a>
             &nbsp;
             <a
@@ -30,7 +30,7 @@ export default function SocialShare(props) {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <i className="fab fa-whatsapp"></i> WhatsApp
+                <i className="fab fa-whatsapp"></i>
             </a>
             &nbsp;
         </div>

@@ -26,7 +26,7 @@ export default class PostList extends Component {
                 post={{
                   title: post.title,
                   datePublished: post.published,
-                  image: post['images'][0]['url'],
+                  image: post['images']?.[0]['url'],
                   category: "",
                   excerpt: `${strip_tags(post.content).substr(0, 150)}...`,
                   author: post.author.displayName,

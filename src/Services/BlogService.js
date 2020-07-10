@@ -43,11 +43,11 @@ export default class BlogService {
 
     getPostBySlug = async (slug) => {
         console.log("Getting Post")
-        let response = await fetch(this.POSTS_URL + "?_embed&per_page=1&slug=" + slug, {
+        let response = await fetch(this.POSTS_URL + "?post_id=" + slug, {
             method: 'GET'
         })
         let data = await response.json()
-        return data[0]
+        return data
     }
 
     getAuthor = async (slug) => {
