@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Column({ children, size, offset, ...props}) {
+export default function Column({ children, size, className, offset, ...props}) {
   let clsNm = ``
   if(typeof size === "object") {
     for (const [key, value] of Object.entries(size)) {
@@ -19,6 +19,7 @@ export default function Column({ children, size, offset, ...props}) {
       clsNm += `offset-${offset}`
     }
   }
+  clsNm = `${clsNm} ${className}`
   return (
     <div {...props} className={clsNm}>
       {children}

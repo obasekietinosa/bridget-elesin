@@ -12,6 +12,7 @@ import BlogService from 'Services/BlogService';
 import Helmet from 'react-helmet'
 import Footer from 'Components/Utilities/Layout/Footer/Footer';
 import ScrollToTop from 'Components/Utilities/Routing/ScrollToTop'
+import AboutPage from 'Components/Pages/AboutPage/AboutPage';
 
 const AppRoutes = () => (
   <>
@@ -21,6 +22,9 @@ const AppRoutes = () => (
       <Switch>
         <Route exact path="/" >
           <HomePage />
+        </Route>
+        <Route exact path="/about" >
+          <AboutPage />
         </Route>
         <Route exact path='/posts'>
           <AllPostsPage />

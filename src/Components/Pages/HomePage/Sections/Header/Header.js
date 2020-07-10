@@ -18,6 +18,12 @@ export default class Header extends Component{
             </Column>
             <Column size={{md: "6"}}>
                 <h1>Live Your Best Life!</h1>
+                <h4>
+                  •iConnect •iEncourage •iCoach •iMentor
+                </h4>
+                <p>
+                  I am a firm believer in leaving everyone better than I met them.
+                </p>
             </Column>
           </Row>
         </Container>

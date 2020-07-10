@@ -11,7 +11,7 @@ export default function MostRecentPosts() {
           <div className="col-12">
             <h4 className="text-center">Our Latest Articles</h4>
             <PostList
-              limit={9}
+              limit={6}
               layout={{
                 component: CardColumns,
                 props: {}

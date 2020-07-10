@@ -8,11 +8,15 @@ import Row from 'Components/Utilities/Layout/Containers/Row'
 
 export default function SubscribeCTA() {
   return (
-    <Section className="Categories">
+    <Section bg="black" color="white"  style={{padding:"50px 0"}} className="Categories">
       <Container>
         <Row className="text-center">
         <Column offset={{md: "3"}} size={{md: "6"}}>
-          <h4>5-DAY CONFIDENCE BOOST</h4>
+          <h4>FRESH INSPIRATION FOR YOUR INBOX</h4>
+          <p>
+            Join my mailing list to get updates when I release a new course, organize events
+            or have great stuff to share. 
+          </p>
           <SubscribeToNewsletter 
             renderAs={SubscribeForm}
             layout={{
