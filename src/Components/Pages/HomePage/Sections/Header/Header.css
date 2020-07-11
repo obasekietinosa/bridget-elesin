@@ -1,6 +1,7 @@
 .Header, .hero {
 	color: var(--black);
-  background: var(--white);  /* fallback for old browsers */
+  /* background: var(--white);   */
+  background: lightsteelblue;  /*  */
   padding: 0
 }
 

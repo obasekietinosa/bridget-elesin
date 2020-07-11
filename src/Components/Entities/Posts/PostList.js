@@ -26,9 +26,9 @@ export default class PostList extends Component {
                 post={{
                   title: post.title,
                   datePublished: post.published,
-                  image: post['images']?.[0]['url'],
+                  image: post['images']?.[0]['url'] ?? "https://services.etin.space/demos/bridgetelesin/BridgetElesin.png",
                   category: "",
-                  excerpt: `${strip_tags(post.content).substr(0, 150)}...`,
+                  excerpt: `${strip_tags(post.content).substr(0, 75)}...`,
                   author: post.author.displayName,
                   link: "/posts/" + post.id
                 }}

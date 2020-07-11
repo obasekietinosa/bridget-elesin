@@ -18,27 +18,36 @@ export default function Footer() {
             <Link className="btn btn-primary" to="/about">About</Link>
           </Column>
           <Column size={{sm: "3"}}>
-            <h6>Blog</h6>
+            <h6>Links</h6>
             <p>
-              <Link to="/contribute">Contribute</Link>
+              <Link to="/posts">Blog</Link>
             </p>
             <p>
-              <Link to="/credits">Credits</Link>
+              <a href="https://anchor.fm/teamelesin" rel="noopener noreferrer" target="_blank">Podcast</a>
+            </p>
+            <p>
+              <Link to="/courses">Courses</Link>
+            </p>
+            <p>
+              <Link to="/books">Books</Link>
             </p>
           </Column>
           <Column size={{sm: "3"}}>
-            <h6>Categories</h6>
+            <h6>Connect</h6>
             <p>
-              <Link to="/categories/music">Music</Link>
+              <Link to="/contact">Contact Me</Link>
             </p>
             <p>
-              <Link to="/categories/insights">Insights</Link>
+              <a href="mailto:me@bridgetelesin.com" rel="noopener noreferrer" target="_blank">Email</a>
             </p>
             <p>
-              <Link to="/categories/conversation">Conversation</Link>
+              <a href="https://facebook.com/bridgetelesin" rel="noopener noreferrer" target="_blank">Facebook</a>
             </p>
             <p>
-              <Link to="/categories/community">Community</Link>
+              <a href="https://twitter.com/bridgetelesin" rel="noopener noreferrer" target="_blank">Twitter</a>
+            </p>
+            <p>
+              <a href="https://instagram.com/bridgetelesin" rel="noopener noreferrer" target="_blank">Instagram</a>
             </p>
           </Column>
         </Row>

@@ -129,12 +129,12 @@ class App extends Component {
           <meta property="og:description"
             content="Bridget Elesin teaches individuals how to live their best life with transformational results. She is passionate about the family and ensuring men become better fathers while working with their wives as a team to build the family." />
           <meta name="description" content="Bridget Elesin teaches individuals how to live their best life with transformational results. She is passionate about the family and ensuring men become better fathers while working with their wives as a team to build the family." />
-          <meta property="og:image" content="https://blog-admin.wetalksound.co/extra/thumbnail.png" />
-          <meta property="og:url" content="https://blog.wetalksound.co" />
+          <meta property="og:image" content="https://services.etin.space/demos/bridgetelesin/BridgetElesin.png" />
+          <meta property="og:url" content="https://bridgetelesin.com" />
           <meta name="twitter:title" content="Live Your Best Life - Bridget Elesin" />
           <meta name="twitter:description"
             content="Bridget Elesin teaches individuals how to live their best life with transformational results. She is passionate about the family and ensuring men become better fathers while working with their wives as a team to build the family." />
-          <meta name="twitter:image" content="https://blog-admin.wetalksound.co/extra/thumbnail.png" />
+          <meta name="twitter:image" content="https://services.etin.space/demos/bridgetelesin/BridgetElesin.png" />
           <meta property="og:site_name" content="Live Your Best Life - Bridget Elesin" />
           <meta name="twitter:image:alt" content="Live Your Best Life - Bridget Elesin" />
         </Helmet>
