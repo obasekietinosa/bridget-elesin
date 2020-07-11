@@ -18,7 +18,7 @@ export default class PostPreviewCard extends Component {
           </p>
           <div className="card-text" dangerouslySetInnerHTML={{ __html: this.props.post.excerpt }}>
           </div>
-          <Link to={this.props.post.link}>
+          <Link className="btn btn-outline-primary" to={this.props.post.link}>
             Read More
           </Link>
         </div>

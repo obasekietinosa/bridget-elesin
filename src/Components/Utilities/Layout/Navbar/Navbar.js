@@ -14,7 +14,7 @@ export default function Navbar() {
       <li><Link onClick={ () => {setOpenDrawer(false)} } to="/about">About</Link></li>
       <li><Link onClick={ () => {setOpenDrawer(false)} } to="/blog">Blog</Link></li>
       <li><Link onClick={ () => {setOpenDrawer(false)} } to="/books">Books</Link></li>
-      <li><Link onClick={ () => {setOpenDrawer(false)} } to="/podcast">Podcast</Link></li>
+      <li><a onClick={ () => {setOpenDrawer(false)} } href="https://anchor.fm/teamelesin" rel="noopener noreferrer" target="_blank">Podcast</a></li>
       <li><Link onClick={ () => {setOpenDrawer(false)} } to="/courses">Courses</Link></li>
       <li><Link onClick={ () => {setOpenDrawer(false)} } to="/contact">Contact</Link></li>
       <li>

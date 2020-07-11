@@ -10,14 +10,14 @@ export default function Footer() {
     <footer>
       <Container>
         <Row>
-          <Column size={{sm: "3", md:"6"}}>
+          <Column size={{sm: "6"}}>
             <h6>Bridget Elesin</h6>
             <p>
-              Bridget Elesin teaches individuals how to live their best life with transformational results.
+              I am Bridget Elesin and I teach individuals how to live their best life with transformational results.
             </p>
             <Link className="btn btn-primary" to="/about">About</Link>
           </Column>
-          <Column size={{sm: "3", md:"2"}}>
+          <Column size={{sm: "3"}}>
             <h6>Blog</h6>
             <p>
               <Link to="/contribute">Contribute</Link>
@@ -26,7 +26,7 @@ export default function Footer() {
               <Link to="/credits">Credits</Link>
             </p>
           </Column>
-          <Column size={{sm: "3", md:"2"}}>
+          <Column size={{sm: "3"}}>
             <h6>Categories</h6>
             <p>
               <Link to="/categories/music">Music</Link>
@@ -39,15 +39,6 @@ export default function Footer() {
             </p>
             <p>
               <Link to="/categories/community">Community</Link>
-            </p>
-          </Column>
-          <Column size={{sm: "3", md:"2"}}>
-            <h6>Links</h6>
-            <p>
-              <a href="https://t.me/wetalksound">Our Community</a>
-            </p>
-            <p>
-              <a href="https://wtxtra.agency">WTXtra</a>
             </p>
           </Column>
         </Row>
