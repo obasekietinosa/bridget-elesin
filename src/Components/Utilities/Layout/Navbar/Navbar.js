@@ -12,7 +12,7 @@ export default function Navbar() {
     <ul>
       <li><Link onClick={ () => {setOpenDrawer(false)} } to="/">Home</Link></li>
       <li><Link onClick={ () => {setOpenDrawer(false)} } to="/about">About</Link></li>
-      <li><Link onClick={ () => {setOpenDrawer(false)} } to="/blog">Blog</Link></li>
+      <li><Link onClick={ () => {setOpenDrawer(false)} } to="/posts">Blog</Link></li>
       <li><Link onClick={ () => {setOpenDrawer(false)} } to="/books">Books</Link></li>
       <li><a onClick={ () => {setOpenDrawer(false)} } href="https://anchor.fm/teamelesin" rel="noopener noreferrer" target="_blank">Podcast</a></li>
       <li><Link onClick={ () => {setOpenDrawer(false)} } to="/courses">Courses</Link></li>
