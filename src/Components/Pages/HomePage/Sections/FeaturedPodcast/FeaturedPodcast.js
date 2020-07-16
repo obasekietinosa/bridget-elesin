@@ -12,7 +12,7 @@ export default function FeaturedPodcast() {
         <Column offset={{md: "3"}} size={{md: "6"}}>
           <h4>SONIC INSPIRATION TO GUIDE YOU TO YOUR BEST LIFE</h4>
           <p>
-            Listen to my podcast, "The Complete Family Show", 
+            Listen to our podcast, "The Complete Family Show", 
             A family focused podcast that helps to build and sustain families, 
             discussing real issues and proffering real solutions.
           </p>
@@ -20,7 +20,7 @@ export default function FeaturedPodcast() {
             <iframe 
               src="https://anchor.fm/teamelesin/embed/episodes/Your-relationships-and-your-marriage-egjhhe/a-a2m3rsf" 
               frameborder="0" 
-              scrolling="no"
+              scrolling="yes"
               title="Featured Podcast"
             >
             </iframe>

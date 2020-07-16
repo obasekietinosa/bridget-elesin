@@ -13,7 +13,7 @@ export default function AboutMe() {
         <Column className="order-md-12" size={{md: "6"}}>
           <img 
             alt="Bridget Elesin's Masterclasses" 
-            src="https://services.etin.space/demos/bridgetelesin/intro.png" 
+            src="https://services.etin.space/demos/bridgetelesin/dazzle.png" 
             className="img-fluid" 
           />
         </Column>
