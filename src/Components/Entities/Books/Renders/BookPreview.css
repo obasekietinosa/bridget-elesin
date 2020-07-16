@@ -1,0 +1,18 @@
+.BookPreview {
+  margin-bottom: 15px;
+}
+
+.BookPreview h3 {
+  font-family: var(--heading-font);
+}
+
+.BookPreview .title {
+  text-decoration: none;
+  color: inherit;
+}
+
+.BookPreview span {
+  background: var(--accent);
+  padding: 5px;
+  font-size: 10px;
+}

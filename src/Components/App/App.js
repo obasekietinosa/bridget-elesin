@@ -4,6 +4,7 @@ import Navbar from 'Components/Utilities/Layout/Navbar/Navbar';
 import { Switch, Route, BrowserRouter, StaticRouter } from 'react-router-dom';
 import HomePage from 'Components/Pages/HomePage/HomePage';
 import AllPostsPage from 'Components/Pages/AllPostsPage/AllPostsPage';
+import BooksPage from 'Components/Pages/BooksPage/BooksPage';
 import PostPage from 'Components/Pages/PostPage/PostPage';
 import CategoryPage from 'Components/Pages/CategoryPage/CategoryPage';
 import DefaultPage from 'Components/Pages/DefaultPage/DefaultPage';
@@ -28,6 +29,9 @@ const AppRoutes = () => (
         </Route>
         <Route exact path='/posts'>
           <AllPostsPage />
+        </Route>
+        <Route exact path='/books'>
+          <BooksPage />
         </Route>
         <Route exact path='/posts/:slug' component={PostPage} />
         <Route exact path='/categories/:slug' component={CategoryPage} />
