@@ -1,0 +1,18 @@
+.CoursePreview {
+  margin-bottom: 15px;
+}
+
+.CoursePreview h3 {
+  font-family: var(--heading-font);
+}
+
+.CoursePreview .title {
+  text-decoration: none;
+  color: inherit;
+}
+
+.CoursePreview span {
+  background: var(--accent);
+  padding: 5px;
+  font-size: 10px;
+}
