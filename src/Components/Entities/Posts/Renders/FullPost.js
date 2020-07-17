@@ -6,6 +6,9 @@ import SocialShare from 'Components/Utilities/SocialShare/SocialShare'
 import SyntaxHighlight from 'Components/Utilities/SyntaxHighlight/SyntaxHighlight'
 import { htmlDecode } from 'Helpers/Helpers'
 import './FullPost.css'
+import Container from 'Components/Utilities/Layout/Containers/Container'
+import Row from 'Components/Utilities/Layout/Containers/Row'
+import Column from 'Components/Utilities/Layout/Containers/Column'
 
 export default function FullPost({ post }) {
   return (
@@ -22,10 +25,10 @@ export default function FullPost({ post }) {
         <meta name="twitter:image" content={post.image} />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
-      <header>
-        <div className="container">
-          <div className="row align-items-md-center">
-            <div className="col-12 mb-3">
+      <header style={{padding: "50px 0"}}>
+        <Container>
+          <Row className="align-items-md-center">
+            <Column size="12" className="mb-3">
               <span className="category"><small>{post.category}</small></span>
               <h1
                 dangerouslySetInnerHTML={{ __html: post.title }}
@@ -45,25 +48,25 @@ export default function FullPost({ post }) {
                   }
                 }
               />
-            </div>
-          </div>
-        </div>
+              <Row>
+                <Column size="12">
+                  <h5>Share this article:</h5>
+                  <SocialShare text={"Read " + htmlDecode(post.title) + " on BridgetElesin.com"} url={`https://bridgetelesin.com/posts/${post.slug}`} tag={"BridgetElesinTalks"} />
+                </Column>
+              </Row>
+            </Column>
+          </Row>
+        </Container>
       </header>
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <div className="blog-content">
+      <Container>
+        <Row>
+          <Column size="12">
+            <div style={{padding: "50px 0"}} className="blog-content">
               <SyntaxHighlight content={post.content} />
             </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12">
-            <h5>Share this article:</h5>
-            <SocialShare text={"Read " + htmlDecode(post.title) + " on BridgetElesin.com"} url={`https://bridgetelesin.com/posts/${post.slug}`} tag={"BridgetElesinTalks"} />
-          </div>
-        </div>
-      </div>
+          </Column>
+        </Row>
+      </Container>
     </div>
   )
 }

@@ -1,7 +1,9 @@
 .blog-content img {
-  height: auto;
-  width: 100%;
-  border-radius: 10px;
+  height: 320px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  /* border-radius: 10px; */
   margin-bottom: 5px;
 }
 
@@ -17,11 +19,6 @@
 
 .FullPost p {
   line-height: 1.5;
-}
-
-.FullPost header {
-  background-color: var(--light-grey);
-  color: var(--black);
 }
 
 .FullPost header img {
