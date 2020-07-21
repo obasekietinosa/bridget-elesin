@@ -16,7 +16,7 @@ export default function FeaturedPodcast() {
             A family focused podcast that helps to build and sustain families, 
             discussing real issues and proffering real solutions.
           </p>
-          <div class="embed-responsive embed-responsive-16by9">
+          <div style={{height:"120px"}} class="embed-responsive embed-responsive-16by9">
             <iframe 
               src="https://anchor.fm/teamelesin/embed/episodes/Your-relationships-and-your-marriage-egjhhe/a-a2m3rsf" 
               frameborder="0" 
