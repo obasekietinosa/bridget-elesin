@@ -5,7 +5,8 @@ export default function Flex({ children, alignItems, justifyContent, ...props}) 
     display: 'flex',
     height: '100%',
     alignItems: alignItems,
-    justifyContent: justifyContent
+    justifyContent: justifyContent,
+    ...props.style
   }
   return (
     <div style={style} className="Flex">

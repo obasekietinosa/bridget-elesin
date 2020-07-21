@@ -15,6 +15,7 @@ import Helmet from 'react-helmet'
 import Footer from 'Components/Utilities/Layout/Footer/Footer';
 import ScrollToTop from 'Components/Utilities/Routing/ScrollToTop'
 import AboutPage from 'Components/Pages/AboutPage/AboutPage';
+import ContactPage from 'Components/Pages/ContactPage/ContactPage';
 
 const AppRoutes = () => (
   <>
@@ -36,6 +37,9 @@ const AppRoutes = () => (
         </Route>
         <Route exact path='/courses'>
           <CoursesPage />
+        </Route>
+        <Route exact path='/contact'>
+          <ContactPage />
         </Route>
         <Route exact path='/posts/:slug' component={PostPage} />
         <Route exact path='/categories/:slug' component={CategoryPage} />
