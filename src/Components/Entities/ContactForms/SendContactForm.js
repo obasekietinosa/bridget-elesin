@@ -10,25 +10,37 @@ export default class SendContactForm extends Component {
         }
     }
 
-  sendMessage = newMessage => {
+  sendMessage = ({name, email, subject, contactMessage}) => {
     this.setState({ message:"Please wait", status: "Loading" })
-    fetch("https://blog-admin.wetalksound.co/newsletter/ContactForm.php", {
+
+    let formData = new FormData()
+    formData.append('name', name)
+    formData.append('email', email)
+    formData.append('subject', subject)
+    formData.append('message', contactMessage)
+
+    fetch("https://bridgetlyspeaking.com/functions/contact.php", {
       method: 'POST',
       headers: {
           'Accept': 'application/json',
-          'Content-Type': 'application/json'
-      }
+          // 'Content-Type': 'application/json'
+      },
+      body: formData
     })
     .then(res => res.json())
     .then(data => {
       console.log(data)
       switch (data.status) {
           case "Success":
-            this.setState({ status: "Done", message: "Success! You'll receive an email for my next publication"})
+            this.setState({ status: "Done", message: data.message})
             break;
 
           case "Duplicate":
             this.setState({ status: "Done", message: "Thanks! Seems like you've already sent this message."})
+            break;
+
+          case "Fail":
+            this.setState({ status: "Error", message: data.message})
             break;
       
           default:

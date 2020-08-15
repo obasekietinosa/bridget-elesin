@@ -19,7 +19,7 @@ export default class SubscribeToNewsletter extends Component {
         return
     }
     this.setState({ message:"Please wait", status: "Loading" })
-    fetch("https://blog-admin.wetalksound.co/newsletter/subscribe.php?email=" + email, {
+    fetch("https://bridgetlyspeaking.com/functions/subscribe.php?email=" + email, {
       method: 'GET',
       headers: {
           'Accept': 'application/json',

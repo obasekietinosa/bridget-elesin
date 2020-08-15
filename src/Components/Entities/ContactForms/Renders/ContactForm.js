@@ -10,6 +10,13 @@ export default function ContactForm({ onSubmit, message, status  }) {
   const [ contactMessage, setContactMessage ] = useState("")
   const [ errors, setErrors ] = useState([])
 
+  if (status === "Done") {
+    setName("")
+    setEmail("")
+    setSubject("")
+    setContactMessage("")
+  }
+
   const validate = () => {
     let errors = []
     if (name.length === 0){
